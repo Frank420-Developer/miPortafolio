@@ -104,31 +104,31 @@ for(i = 0; i < act.length; i++){
 
 //--------------------NAVEGACION----------------------------------------------------------//
 
-let menuToggle = document.querySelector('.menu-toggle');
-let menuToggleIcon = document.querySelector('.menu-toggle i');
-let navegacion = document.getElementById('menu');
-let enlace = document.querySelectorAll('.me');
-let j;
+// let menuToggle = document.querySelector('.menu-toggle');
+// let menuToggleIcon = document.querySelector('.menu-toggle i');
+// let navegacion = document.getElementById('menu');
+// let enlace = document.querySelectorAll('.me');
+// let j;
 
-menuToggle.addEventListener('click', e=>{
-    navegacion.classList.toggle('mostrar');
-    barraNavegacion();
-});
+// menuToggle.addEventListener('click', e=>{
+//     navegacion.classList.toggle('mostrar');
+//     barraNavegacion();
+// });
 
-for(j=0; j< enlace.length; j++){
-    enlace[j].onclick = function(){
-    navegacion.removeAttribute('class', 'mostrar');
-    barraNavegacion();
-    } 
-}
-function barraNavegacion(enlace){
-    if(navegacion.classList.contains('mostrar')){
-        menuToggleIcon.setAttribute('class', 'fa fa-times');
-    }else{
-        menuToggleIcon.setAttribute('class', 'fa fa-bars');
+// for(j=0; j< enlace.length; j++){
+//     enlace[j].onclick = function(){
+//     navegacion.removeAttribute('class', 'mostrar');
+//     barraNavegacion();
+//     } 
+// }
+// function barraNavegacion(enlace){
+//     if(navegacion.classList.contains('mostrar')){
+//         menuToggleIcon.setAttribute('class', 'fa fa-times');
+//     }else{
+//         menuToggleIcon.setAttribute('class', 'fa fa-bars');
         
-    }
-}
+//     }
+// }
 
 //------------------------------------modal------------------------------//
 let cerrar = document.querySelectorAll('.close')[0];

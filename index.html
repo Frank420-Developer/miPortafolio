@@ -21,28 +21,41 @@
     <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
 
     <link rel="preload" href="css/style.css" as="style">
-    <link rel="stylesheet" href="css/style.css" >
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
 
     <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css"> -->
 </head>
 <body id="html">
     <header>
-        <div class="contenedor__enlaces--header">
-            <a class="facebook"href="https://www.facebook.com/panchito.vera.bocanegra/" target="_blank"><i class="fa fa-facebook-f fa-2x"></i></a>
-            <a class="instagram" href="https://www.instagram.com/panchitooo/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
-            <a class="github" href="https://github.com/Frank420-Developer" target="_blank"><i class="fa fa-github fa-2x"></i></a>
-        </div>
-        <nav id="menu">
-            <div class="navegacion">
-                <a class="me" href="#sobremi" >Sobre Mi</a>
-                <a class="me" href="#inicio">Inicio</a>
-                <a class="me" href="#portafolio">Potafolio</a>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fondo-nav sticky-top" id="menu-navegacion">
+            <div class="container my-1">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"> </span>
+                </button>
+        
+                <div class="collapse navbar-collapse align-content-between" id="navbarSupportedContent">
+                    <div class="contenedor__enlaces--header">
+                        <a class="facebook"href="https://www.facebook.com/panchito.vera.bocanegra/" target="_blank"><i class="fa fa-facebook-f fa-2x"></i></a>
+                        <a class="instagram" href="https://www.instagram.com/francisco_vera_bocanegra/" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+                        <a class="github" href="https://github.com/Frank420-Developer" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+                    </div>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobremi">Sobre Mi</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portafolio">Portafolio</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </nav> <!-- .navegacion-principal .contenedor-->
-        <div class="menu-toggle">
-            <i class="fa fa-bars"></i>
-        </div>
+        </nav>
     </header>
     <div class="fondo" id="inicio">
             <section class="hero">
@@ -362,6 +375,8 @@
     </footer>
     <script src="js/modernizr.js"></script>
     <Script src="js/sobremi.js"></Script>
+    <script src="js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
     <script src="js/bootstrap/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->

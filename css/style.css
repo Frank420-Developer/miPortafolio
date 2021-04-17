@@ -21,7 +21,7 @@ html{
     box-sizing: inherit;
 }
 body{
-    font-size: 16px; /*1rem = 10px*/
+    font-size: 16px !important; /*1rem = 10px*/
     font-family: 'Krub', sans-serif;
 }
 @media (max-width: 768px) {
@@ -56,10 +56,6 @@ p{
 }
 header{
     position: fixed;
-    height: 5rem;
-    background-color: rgba(0, 0, 0);
-    display: flex;
-    padding: 0 2rem;
     width: 100%;
 }
 marquee{
@@ -125,7 +121,7 @@ marquee{
 
 /*NAVEGACION*/
 
-.menu-toggle{
+/* .menu-toggle{
     display: none;
     margin: 1rem 2rem 0 auto;
     font-size: 3rem;
@@ -162,12 +158,24 @@ marquee{
 }
 .mostrar{
     height: 22% !important;
+} */
+
+.navbar{
+    justify-content: flex-end;
+}
+.navbar-nav{
+    align-items: center;
 }
 .contenedor__enlaces--header{
     display: flex;
-    width: 30rem;
+    width: 100%;
     justify-content: space-evenly;
     padding: 1rem;
+}
+@media (min-width: 992px) {
+    .contenedor__enlaces--header{
+        width: 30rem;
+    }
 }
 .contenedor__enlaces--header a{
     display: block;
@@ -179,7 +187,7 @@ marquee{
     box-shadow: 0 3px 5px 0 rgba(0, 0, 0, .2);
     transition: .2s;
 }
-@media screen and (max-width: 767px) {
+/* @media screen and (max-width: 767px) {
     header{
         margin-left: auto;
         width: 100%;
@@ -222,7 +230,7 @@ marquee{
     .contenedor__enlaces--header{
         display: none;
     }
-}
+} */
 
 
 
