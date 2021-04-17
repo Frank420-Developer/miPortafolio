@@ -134,21 +134,21 @@ for(i = 0; i < act.length; i++){
 let cerrar = document.querySelectorAll('.close')[0];
 let abrir = document.querySelectorAll('#ingles')[0];
 let modal = document.querySelectorAll('.conteiner-slider')[0];
-let modalIc = document.querySelectorAll('.modal-conteiner')[0];
+let modalC = document.querySelectorAll('.modal-conteiner')[0];
 
 abrir.addEventListener('click', function(e){
     e.preventDefault();
-    modalIc.style.opacity ='1';
-    modalIc.style.visibility = 'visible';
-    modalIc.style.display = 'flex'
+    modalC.style.opacity ='1';
+    modalC.style.visibility = 'visible';
+    modalC.style.display = 'flex'
     modal.classList.toggle('modal-close');
 });
 
 cerrar.addEventListener('click', function(){
     modal.classList.toggle('modal-close');
-    modalIc.style.opacity ='0';
-    modalIc.style.display = 'none'
-    modalIc.style.visibility = 'hidden';
+    modalC.style.opacity ='0';
+    modalC.style.display = 'none'
+    modalC.style.visibility = 'hidden';
 });
  
 
