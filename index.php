@@ -287,6 +287,9 @@
                         <p>Este proyecto es el más reciente, actualmente se encuentra en desarrollo y de momento se ha realizado alrededor del 10% del mismo. Esta siendo desarrollado con HTML5, CSS, JAVASCRIPT en 
                         Visual Studio, se utilizará tambien bases de datos SQL, PHP y modelo MVC para la parte de obtener y mostrar datos, así mismo realizara el CRUD en todas las secciones necesarias, se estima que estará listo a finales del presente año.
                         </p>
+                        <div class="proyecto__enlaces">
+                            <i class="fa fa-link"><a href="https://github.com/Frank420-Developer/FarmaciaOver" target="_blank">Enlace al Repositorio en GitHub</a></i>
+                        </div>
                     </div>
                     <div class="proyecto animado">
                         <div class="proyecto__icono">
