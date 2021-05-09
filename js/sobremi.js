@@ -131,25 +131,25 @@ for(i = 0; i < act.length; i++){
 // }
 
 //------------------------------------modal------------------------------//
-let cerrar = document.querySelectorAll('.close')[0];
-let abrir = document.querySelectorAll('#ingles')[0];
-let modal = document.querySelectorAll('.conteiner-slider')[0];
-let modalC = document.querySelectorAll('.modal-conteiner')[0];
+// let cerrar = document.querySelectorAll('.close')[0];
+// let abrir = document.querySelectorAll('#ingles')[0];
+// let modal = document.querySelectorAll('.conteiner-slider')[0];
+// let modalC = document.querySelectorAll('.modal-conteiner')[0];
 
-abrir.addEventListener('click', function(e){
-    e.preventDefault();
-    modalC.style.opacity ='1';
-    modalC.style.visibility = 'visible';
-    modalC.style.display = 'flex'
-    modal.classList.toggle('modal-close');
-});
+// abrir.addEventListener('click', function(e){
+//     e.preventDefault();
+//     modalC.style.opacity ='1';
+//     modalC.style.visibility = 'visible';
+//     modalC.style.display = 'flex'
+//     modal.classList.toggle('modal-close');
+// });
 
-cerrar.addEventListener('click', function(){
-    modal.classList.toggle('modal-close');
-    modalC.style.opacity ='0';
-    modalC.style.display = 'none'
-    modalC.style.visibility = 'hidden';
-});
+// cerrar.addEventListener('click', function(){
+//     modal.classList.toggle('modal-close');
+//     modalC.style.opacity ='0';
+//     modalC.style.display = 'none'
+//     modalC.style.visibility = 'hidden';
+// });
  
 
 //---------------------------PORTAFOLIO----------------------------//

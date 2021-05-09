@@ -285,7 +285,7 @@ marquee{
 } 
 
 /** CONTACTO **/
-.error{
+/* .error{
     border-radius: 1rem;
     background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
     color: var(--blanco);
@@ -388,7 +388,7 @@ marquee{
 }
 input[type='submit']{
     cursor: pointer;
-}
+} */
 /* FOOTER */
 .footer{
     display: grid;
@@ -613,7 +613,7 @@ input[type='submit']{
     padding: 1rem;
     cursor: pointer;
 }
-.modal-conteiner{
+/* .modal-conteiner{
     position: fixed;
     z-index: 1000;
     width: 100%;
@@ -666,8 +666,7 @@ input[type='submit']{
 .slider__img{
     width: 100%;
     height: 100%;
-}
-
+} */
 
 /*PORTAFOLIO*/
 .portafolio{
@@ -824,7 +823,7 @@ input[type='submit']{
 }
 .show{
     opacity: 1;
-    max-height: 50rem;
+    max-height: 90%;
 }
 
 

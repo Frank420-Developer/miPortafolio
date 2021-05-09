@@ -217,18 +217,36 @@
                                     obteniendo un historial académico que lo avala, este puede visualizarse a 
                                     continuación.
                                 </p>
-                                <button id="ingles" class="fa fa-file-pdf-o">Ver Documento</button>
+                                <button id="ingles" class="fa fa-file-pdf-o" data-toggle="modal" data-target="#constanciaIngles">Ver Documento</button>
                             </div> 
-                            <div class="modal-conteiner">
+
+                            <!-- ..::Modal de Inglés::..   -->
+                            <div class="modal fade" id="constanciaIngles" >
+                                <div class="modal-dialog modal-lg h-100">
+                                    <div class="modal-content h-100">
+                                        <div class="modal-header">
+                                            <h2 class="modal-title">Contancia Inglés</h2><button class="btn btn-light" data-dismiss="modal"><i class="fa fa-times fa-2x"></i></button>
+                                        </div>
+                                        <div class="modal-body mx-2 d-flex justify-content-center">
+                                            <iframe src="img/ingles.pdf" class="m-0" width="90%"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- <div class="modal-conteiner">
                                 <div class="conteiner-slider modal-close">
                                     <div class="slider" id="slider">
                                         <div class="slider__section">
-                                            <iframe src="img/ingles.pdf" class="slider__img" name="Historial-Inglés"></iframe>
+                                            
                                         </div>
-                                    </div> <!--.slider-->
+                                    </div>
                                     <i class="fa fa-times close"></i>                                    
-                                </div><!--.modal .modal-close-->
-                            </div><!--.modal-conteiner-->
+                                </div>
+                            </div> -->
+                            
+
                         </div> <!--.herramientas-->
 
                         <div class="idiomas">
