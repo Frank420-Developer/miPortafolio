@@ -230,13 +230,9 @@ marquee{
 
 
 /*BANNER*/
-.webp .hero{
-    background-image: url(../img/prog2.webp);
-}
-.no-webp .hero{
-    background-image: url(../img/prog2.jpg) ;
-}
+
 .hero{
+    background-image: url(../img/prog2.jpg);
     height: 100vh;
     margin-bottom: 1rem;
     background-repeat: no-repeat;
