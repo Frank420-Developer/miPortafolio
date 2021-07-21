@@ -67,6 +67,7 @@ marquee{
     color: var(--blanco);
 }
 .subtitulo{
+    font-size: 3rem;
     font-weight: bold;
     color: var(--gmail);
 }
@@ -745,14 +746,14 @@ input[type='submit']{
 }
 .animado{
     opacity: 0;
-    transition: all .3s;
+    
 }
 .mostrar__arriba{
-    animation: derecha 2s;
+    animation: derecha .6s;
 }
 @media (min-width: 768px) {
    .mostrar__arriba{
-       animation: arriba 1s;
+       animation: arriba 1s ease-in;
    }
 }
 @keyframes arriba{
@@ -780,6 +781,7 @@ input[type='submit']{
     cursor: pointer;
     border: none;
     border-radius: 1rem;
+    margin: .5rem 0;
 }
 .tool:hover,
 .active{
@@ -803,13 +805,15 @@ input[type='submit']{
     color: var(--blanco);
     max-height: 0;
     overflow: hidden;
-    transition: 0.7s ease-in-out;
+    transition: opacity .1s ease-out;
     opacity: 0;
     margin: 0;
     line-height: 1.5;
     border-bottom-left-radius: 3rem;
     border-bottom-right-radius: 3rem;
     text-align:left;
+    align-items: center;
+    
 }   
 .herramiemtas p{
     font-weight: normal;
@@ -819,8 +823,12 @@ input[type='submit']{
 }
 .show{
     opacity: 1;
+}
+.mostrar{
+    opacity: 1;
     max-height: 90%;
 }
+
 
 
 

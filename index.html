@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diseñador Web Francisco Javier Vera Bocanegra</title>
+    <title>Diseñador Web Jr. Francisco Javier Vera Bocanegra</title>
     <link rel="icon" type="image/jpg" href="./img/icono.png">
     <meta name="description" content="Página Web Personal">
     <!--Iconos-->
@@ -14,6 +14,9 @@
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" crossorigin="crossorigin">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Krub:wght@400;700&display=swap" rel="stylesheet">
+
+    <!--JQUERY-->
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
 
     <!--Estilos CSS-->
     <link rel="preload" href="css/style.css" as="style">
@@ -38,10 +41,10 @@
                     </div>
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#sobremi">Sobre Mi</a>
+                            <a class="nav-link" href="#inicio">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#inicio">Inicio</a>
+                            <a class="nav-link" href="#sobremi">Sobre Mi</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#portafolio">Portafolio</a>
@@ -58,7 +61,7 @@
                         
                     </div>
                     <h1>Francisco Javier Vera Bocanegra</h1>
-                    <h2 class="titulo">Desarrollador Web</h2>
+                    <h2 class="titulo">Desarrollador Web Jr.</h2>
                     <P> 
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="36" height="36" viewBox="0 0 24 24" stroke-width="2" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -80,8 +83,8 @@
                         </div>
                         <div class="sobremi__text">
                             <p>
-                                Mi nombre es Francisco Javier Vera Bocanegra, tengo 23 años de edad. Egresado del Instituto 
-                                Politécnico Nacional, Unidad ESIME Culhuacán como Ingeniero en Computación. Mi área principal de interes es el desarrollo web, aplicaciones de escritorio y manejo de bases de datos.
+                                Mi nombre es Francisco Javier Vera Bocanegra, tengo 24 años de edad. Egresado del Instituto 
+                                Politécnico Nacional, Unidad ESIME Culhuacán como Ingeniero en Computación. Actualmente cuento con mi carta Pasante y un certificado total de estudios. Mi área principal de interes es el desarrollo web, aplicaciones de escritorio y manejo de bases de datos.
                             </p>
                         </div>
                         <h2>Aptitudes</h2>
@@ -214,24 +217,24 @@
                                     obteniendo un historial académico que lo avala, este puede visualizarse a 
                                     continuación.
                                 </p>
-                                <button id="ingles" class="fa fa-file-pdf-o" data-toggle="modal" data-target="#constanciaIngles">Ver Documento</button>
+                                <button id="ingles" class="btn btn-outline-primary" style="width: 50%;" data-toggle="modal" data-target="#constanciaIngles"><i class="fa fa-file-pdf-o"></i> <p class="m-0 p-0 lead">Ver Documento</p></button>
                             </div> 
 
                             <!-- ..::Modal de Inglés::..   -->
-                            <div class="modal fade" id="constanciaIngles" >
-                                <div class="modal-dialog modal-lg h-100">
-                                    <div class="modal-content h-100">
+                            <div class="modal fade" id="constanciaIngles" tabindex="-1" >
+                                <div class="modal-dialog modal-xl modal-lg">
+                                    <div class="modal-content" style="height:62rem;">
                                         <div class="modal-header">
                                             <h2 class="modal-title">Contancia Inglés</h2><button class="btn btn-light" data-dismiss="modal"><i class="fa fa-times fa-2x"></i></button>
                                         </div>
                                         <div class="modal-body mx-2 d-flex justify-content-center">
-                                            <iframe src="img/ingles.pdf" class="m-0" width="90%"></iframe>
+                                            <iframe src="img/ingles.pdf" class="m-0" width="80%"></iframe>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-
+                            
                             <!-- <div class="modal-conteiner">
                                 <div class="conteiner-slider modal-close">
                                     <div class="slider" id="slider">
@@ -246,6 +249,37 @@
 
                         </div> <!--.herramientas-->
 
+                        <div class="idiomas">
+                            <h2 class="herramientas__titulo">Cursos y Certificaciones</h2>
+                            <button class="tool">EWTraining - Hard Challenges (C#)</button> 
+                            <div class="panel">
+                                <h3>Técnicas de Ingenierá </h3>
+                                <p>Por parte de la empresa TOWA Software fui participante del curso EWTraining - Hard Challenges, impartido por Gerardo López fundador de la empresa. En este curso principalmente se nos enseño a como pensar de manera ingenieril a la hora de resolver problemas, llevando a cabo una metodologia de desarrollo. Todo el curso estuvo enfocado en resolver algunos problemas en el lenguaje de programación C#. 
+                                </p>
+                                <button id="ewt" class="btn btn-outline-primary" style="width: 50%;" data-toggle="modal" data-target="#constanciaEwt"><i class="fa fa-file-pdf-o"></i> <p class="m-0 p-0 lead">Ver Documento</p></button>
+                            </div> 
+
+                            <!-- ..::Modal de Constancia EWT::..   -->
+                            <div class="modal" id="constanciaEwt" tabindex="-1" role="dialog">
+                                <div class="modal-dialog modal-xl modal-sm" style="margin: 2rem auto; max-width: 60rem; height: 60rem;">
+                                    <div class="modal-content" style="height:100%;">
+                                        <div class="modal-header">
+                                            <h2 class="modal-title">Contancia EWTraining</h2><button class="btn btn-light" data-dismiss="modal"><i class="fa fa-times fa-2x"></i></button>
+                                        </div>
+                                        <div class="modal-body mx-2 d-flex justify-content-center">
+                                            <img src="img/FranciscoVera.png" alt="Constancia EWTraining">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="tool">Udemy Courses</button> 
+                            <div class="panel">
+                                <h3>Desarrollo Web</h3>
+                                <p>Gracias a la plataforma Udemy pude adquierir varios cursos enfocados al desarrollo web, utilizando diversas herramientas tanto para Front-end como back-end. Con el gran apoyo de estos cursos fue que comencé a especializarme en el desarrollo web.
+                                </p>
+                            </div>
+                        </div>
+                            
                         <div class="idiomas">
                             <h2 class="herramientas__titulo">Otros conocimientos</h2>
                             <div class="apt">
@@ -262,7 +296,7 @@
                             </div>
                             <div class="apt">
                                 <i class="fa fa-check"></i>
-                                <p>Excel (Intermedio)</p>
+                                <p>Excel (Básico)</p>
                             </div>
                         </div> <!--.herramientas-->
                     </section>
@@ -272,16 +306,13 @@
                 <h2 class="subtitulo">Portafolio</h2>
                 <div class="portafolio">
                     <div class="proyecto animado">
-                        <i class="fa fa-archive proyecto__icono"></i>
-                        <h3>Proyecto "Perfumeria Fraiche"</h3>
-                        <p>El primer proyecto que desarrollé junto con un compañero 
-                            de la carrera, fue un sistema de control de inventario,
-                            ventas, descuentos, el cuál fue desarrollado unicamente con
-                            c++ con el software DevC++. Tuvimos la oportunidad de presentar
-                            un video explicando el funcionamiento del proyecto.
+                        <i class="fa fa-medkit proyecto__icono"></i>
+                        <h3>Proyecto "Sistema de control de ventas para Farmacia"</h3>
+                        <p>Este proyecto es el más reciente, actualmente se encuentra en desarrollo y de momento se ha realizado alrededor del 10% del mismo. Esta siendo desarrollado con HTML5, CSS, JAVASCRIPT en 
+                        Visual Studio, se utilizará tambien bases de datos SQL, PHP y modelo MVC para la parte de obtener y mostrar datos, así mismo realizara el CRUD en todas las secciones necesarias, se estima que estará listo a finales del presente año.
                         </p>
                         <div class="proyecto__enlaces">
-                            <i class="fa fa-link"><a href="https://drive.google.com/file/d/0B0-zBZRW60YLNGh4ZW1CSDViaE0/view?usp=sharing" target="_blank">Enlace al video</a></i>
+                            <i class="fa fa-link"><a href="https://github.com/Frank420-Developer/FarmaciaOver" target="_blank">Enlace al Repositorio en GitHub</a></i>
                         </div>
                     </div>
                     <div class="proyecto animado">
@@ -297,16 +328,6 @@
                         </div>
                     </div>
                     <div class="proyecto animado">
-                        <i class="fa fa-medkit proyecto__icono"></i>
-                        <h3>Proyecto "Sistema de control de ventas para Farmacia"</h3>
-                        <p>Este proyecto es el más reciente, actualmente se encuentra en desarrollo y de momento se ha realizado alrededor del 10% del mismo. Esta siendo desarrollado con HTML5, CSS, JAVASCRIPT en 
-                        Visual Studio, se utilizará tambien bases de datos SQL, PHP y modelo MVC para la parte de obtener y mostrar datos, así mismo realizara el CRUD en todas las secciones necesarias, se estima que estará listo a finales del presente año.
-                        </p>
-                        <div class="proyecto__enlaces">
-                            <i class="fa fa-link"><a href="https://github.com/Frank420-Developer/FarmaciaOver" target="_blank">Enlace al Repositorio en GitHub</a></i>
-                        </div>
-                    </div>
-                    <div class="proyecto animado">
                         <div class="proyecto__icono">
                             <i class="fa fa-coffee"></i>
                             <i class="fa fa-shopping-bag"></i>
@@ -319,7 +340,19 @@
                             <i class="fa fa-link"><a href="https://coffe-time.netlify.app" target="_blank">Blog de Café</a></i>
                             <i class="fa fa-link"><a href="https://t-shirts-store.netlify.app" target="_blank">Tienda Virtual</a></i>
                         </div>
-                        
+                    </div>
+                    <div class="proyecto animado">
+                        <i class="fa fa-archive proyecto__icono"></i>
+                        <h3>Proyecto "Perfumeria Fraiche"</h3>
+                        <p>El primer proyecto que desarrollé junto con un compañero 
+                            de la carrera, fue un sistema de control de inventario,
+                            ventas, descuentos, el cuál fue desarrollado unicamente con
+                            c++ con el software DevC++. Tuvimos la oportunidad de presentar
+                            un video explicando el funcionamiento del proyecto.
+                        </p>
+                        <div class="proyecto__enlaces">
+                            <i class="fa fa-link"><a href="https://drive.google.com/file/d/0B0-zBZRW60YLNGh4ZW1CSDViaE0/view?usp=sharing" target="_blank">Enlace al video</a></i>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -390,9 +423,7 @@
         </div> 
     </footer>
 
-    <script src="js/sobremi.js"></script>
-    <script src="js/jquery.min.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-    
+    <script type="text/javascript" src="js/sobremi.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>    
 </body>
 </html>

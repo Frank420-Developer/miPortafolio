@@ -1,5 +1,18 @@
-//Eventos de los inputs y textareas
+//Eventos en página sobre mi
+// $(document).ready(function(){
+//   $('.panel').css('display', 'none');
 
+//   let tool = $('.tool');
+//   let panel = $('.panel');
+//   for(let i; i < tool.length; i++){
+//     tool[i].click(function(){
+//       panel.toggle();
+//     });
+//   }
+      
+// });
+
+//Eventos de los inputs y textareas
 
 // const datos = {
 //     nombre: '',
@@ -19,8 +32,6 @@
 // let modal2 = document.querySelector('.error');
 // let close = document.querySelector('.cerrar');
 
-
-
 // nombre.addEventListener('input', leerTexto);
 // telefono.addEventListener('input', leerTexto);
 // correo.addEventListener('input', leerTexto);
@@ -31,9 +42,7 @@
 // //     e.preventDefault();
 
 //     //Validar el formulario
-    
 
-    
 //     abrir.addEventListener('click', function(e){
 //         e.preventDefault();
 
@@ -60,17 +69,16 @@
 //                 modal1.classList.toggle('ventana__exito');
 //             });
 //         }
-        
-//     })
-    
-//     // mostrarAlerta('Formulario Enviado Correctamente');
-    
-// // });
 
+//     })
+
+//     // mostrarAlerta('Formulario Enviado Correctamente');
+
+// // });
 
 // function leerTexto(e){
 //     datos[e.target.id] = e.target.value
-    // console.log(datos);
+// console.log(datos);
 //}
 
 // function mostrarAlerta(mensaje, error = null){
@@ -89,16 +97,13 @@
 // }
 
 //-----------------------------------------------------------------------------------//
-
-//Eventos en página sobre mi
-
 const act = document.getElementsByClassName("tool");
 var i;
 
 for(i = 0; i < act.length; i++){
     act[i].onclick = function(){
         this.classList.toggle("active");
-        this.nextElementSibling.classList.toggle("show");
+        this.nextElementSibling.classList.toggle("mostrar");
     }
 }
 
@@ -119,57 +124,53 @@ for(i = 0; i < act.length; i++){
 //     enlace[j].onclick = function(){
 //     navegacion.removeAttribute('class', 'mostrar');
 //     barraNavegacion();
-//     } 
+//     }
 // }
 // function barraNavegacion(enlace){
 //     if(navegacion.classList.contains('mostrar')){
 //         menuToggleIcon.setAttribute('class', 'fa fa-times');
 //     }else{
 //         menuToggleIcon.setAttribute('class', 'fa fa-bars');
-        
+
 //     }
 // }
 
 //------------------------------------modal------------------------------//
-let cerrar = document.querySelectorAll('.close')[0];
-let abrir = document.querySelectorAll('#ingles')[0];
-let modal = document.querySelectorAll('.conteiner-slider')[0];
-let modalC = document.querySelectorAll('.modal-conteiner')[0];
+// let abrir = document.querySelectorAll('#ingles')[0];
+// let cerrar = document.querySelectorAll('.close')[0];
+// let modal = document.querySelectorAll('.conteiner-slider')[0];
+// let modalC = document.querySelectorAll('.modal-conteiner')[0];
 
-abrir.addEventListener('click', function(e){
-    e.preventDefault();
-    modalC.style.opacity ='1';
-    modalC.style.visibility = 'visible';
-    modalC.style.display = 'flex'
-    modal.classList.toggle('modal-close');
-});
+// abrir.addEventListener('click', function(e){
+//     e.preventDefault();
+//     modalC.style.opacity ='1';
+//     modalC.style.visibility = 'visible';
+//     modalC.style.display = 'flex'
+//     modal.classList.toggle('modal-close');
+// });
 
-cerrar.addEventListener('click', function(e){
-    e.preventDefault();
-    modal.classList.toggle('modal-close');
-    modalC.style.opacity ='0';
-    modalC.style.display = 'none'
-    modalC.style.visibility = 'hidden';
-});
- 
+// cerrar.addEventListener('click', function(){
+
+//     modalC.style.opacity ='0';
+//     modalC.style.display = 'none'
+//     modalC.style.visibility = 'hidden';
+//     modal.classList.toggle('modal-close');
+// });
 
 //---------------------------PORTAFOLIO----------------------------//
-let animado = document.querySelectorAll('.animado');
-function mostrar(){
-    let scrollTop = document.documentElement.scrollTop;
-    for(var i = 0; i < animado.length; i++){
-        let alturaAnimado = animado[i].offsetTop;
-        if(alturaAnimado-300 < scrollTop){
-            animado[i].style.opacity = 1;
-            animado[i].classList.add('mostrar__arriba');
-        }else{
-            animado[i].style.opacity = 0;
-            animado[i].classList.remove('mostrar__arriba');
-        }
-    }
+let animado = document.querySelectorAll('.animado')
+function mostrar () {
+  let scrollTop = document.documentElement.scrollTop
+  for (var i = 0; i < animado.length; i++) {
+    let alturaAnimado = animado[i].offsetTop
+    if (alturaAnimado - 500 < scrollTop) {
+      animado[i].style.opacity = '1'
+      animado[i].classList.add('mostrar__arriba')
+    } 
+    // else {
+    //   animado[i].style.opacity = '0'
+    //   animado[i].classList.remove('mostrar__arriba')
+    // }
+  }
 }
-window.addEventListener('scroll', mostrar);
-
-
-
-
+window.addEventListener('scroll', mostrar)
