@@ -234,7 +234,7 @@ marquee{
 
 .hero{
     background-image: url(../img/prog2.jpg);
-    height: 100vh;
+    height:calc( 100vh - 200px);
     margin-bottom: 1rem;
     background-repeat: no-repeat;
     background-size: cover;
@@ -785,7 +785,7 @@ input[type='submit']{
 }
 .tool:hover,
 .active{
-    background-color:#C0C0C0;
+    background-color:#a18383 !important;
 }
 .tool:after{
     content: "\2795";
